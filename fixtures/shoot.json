@@ -1,0 +1,8 @@
+{
+  "master": "camA",
+  "cameras": [
+    {"id": "camA", "path": "camA.wav", "nominal_fps": 25},
+    {"id": "camB", "path": "camB.wav", "nominal_fps": 25},
+    {"id": "camC", "path": "camC.wav", "nominal_fps": 25}
+  ]
+}
