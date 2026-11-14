@@ -1,6 +1,6 @@
 # ltcmulti
 
-多机位外拍素材的 LTC 对齐工具。`probe` 已经能从音频导轨里解出 SMPTE LTC 帧。`align` 还没有实现，需要把各机位对齐到主机位时钟，并估计漂移。
+多机位外拍素材的 LTC 对齐工具。`probe` 能从音频导轨里解出 SMPTE LTC 帧；`align` 以主机位解码出的时间码为参考时钟，按段估计每个从机位的入点偏移（帧/采样）和时钟漂移（ppm），并写出对齐 map 与报告。
 
 不要引入 NumPy、sox 或 ffmpeg-python，也不要使用 Docker。请复用 `ltcmulti.ltc`、`ltcmulti.timecode` 和 `ltcmulti.wavio`。
 
